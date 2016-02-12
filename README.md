@@ -3,12 +3,25 @@ This project uses the MediaSilo API and creates a basic screener application. Us
 
 For more information on the api, please see our official [API Documentation](https://docs.mediasilo.com). 
 
+After you have downloaded this project, follow the instructions below:
 
 ### 1. Install Composer
 ```
 curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 ```
-### 2. Change the default account name
+
+### 2. Run composer
+```
+composer update
+```
+
+### 3. Configure your web server or run the build in server
+Point your virtual host to the /public directory or use the SLIM built-in server:
+```
+php -S 0.0.0.0:8080 -t public public/index.php
+```
+
+### 4. Change the default account name
 Open settings.php inside the /src directory. Update the 'hostname' variable with your account/host name. All logins will automatically go against your own MediaSilo account.
 ```
 // MediaSilo Settings
