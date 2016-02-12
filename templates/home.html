@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MediaSilo Microsite</title>
+
+    <!-- Custom styles -->
+    <link href="css/home.css" rel="stylesheet">
+    <link href="fonts/fonts.css" rel="stylesheet">
+    <link href="css/remodal.css" rel="stylesheet">
+    <link href="css/remodal-default-theme.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/remodal.min.js"></script>
+    <script src="js/app.js"></script>
+    <script type="text/javascript" src="js/jwplayer/jwplayer.js"></script>
+
+</head>
+
+<body>
+
+<div class="remodal-bg">
+
+    <!-- Header -->
+    <div class="wrapper m-b-30">
+        <div class="container valign-middle">
+            <span class="logo">MediaSilo Microsite</span>
+            <span class="user">{{ user.firstName }} {{ user.lastName }} &nbsp;&nbsp; | &nbsp;&nbsp;<a href="/logout">Logout</a></span>
+        </div>
+    </div>
+
+    <!-- Main menu -->
+    <div class="container menu m-b-30">
+        <ul id="mainnav">
+            {% for item in projects %}
+            <li><a href="/{{ item.id }}" class="{% if item.id == projectid %}selected{% endif %}">{{ item.name }}</a></li>
+            {% endfor %}
+        </ul>
+    </div>
+
+    <!-- Video Player and Stage -->
+    <div id="videostage">
+        <div id="videoplayer" class="m-b-20"></div>
+    </div>
+    <a href="#" id="videostagectrl">
+        <svg version="1.1" id="Chevron_thin_up" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+                 y="0px" viewBox="0 0 20 20" enable-background="new 0 0 20 20" xml:space="preserve">
+                <path d="M2.582,13.891c-0.272,0.268-0.709,0.268-0.979,0s-0.271-0.701,0-0.969l7.908-7.83c0.27-0.268,0.707-0.268,0.979,0
+        l7.908,7.83c0.27,0.268,0.27,0.701,0,0.969c-0.271,0.268-0.709,0.268-0.978,0L10,6.75L2.582,13.891z"/>
+            </svg>
+    </a>
+    <br>
+
+    <!-- Thumbnails -->
+    <div class="thumbnails l-fullheight ">
+        <div class="flexcontainer">
+
+            {% for item in assets %}
+            <div class="flex-card-listitem m-b-30">
+                <a href="#" data-index="'+i+'" class="thumb-container"><img data-assetid="{{ item.id }}" src="https://d2hl09dnq0lt6g.cloudfront.net/jpg?w=656&h=370&url={{ item.posterFrame }}"></a>
+                <span class="title">{{ item.title }}</span>
+                <span class="duration">{{ item.description }}</span>
+            </div>
+            {% endfor %}
+
+        </div>
+    </div>
+    <!-- Thumbnails-End -->
+
+
+    <div class="loginform" data-remodal-id="modal">
+        <div class="header">SafeStream</div>
+        <form id="loginform">
+            <div class="field-item">
+                <label>Name:</label>
+                <input type="text" name="name" id="name" placeholder="">
+            </div>
+            <div class="field-item">
+                <label>Email:</label>
+                <input type="text" name="email" id="email" placeholder="">
+            </div>
+            <div class="field-item">
+                <label>Company:</label>
+                <input type="text" name="company" id="company" placeholder="">
+            </div>
+        </form>
+        <p class="m-t-40">
+            Please fill out the information above. The fields you provide will be used to customize your SafeStream demo.
+        </p>
+        <br>
+        <button data-remodal-action="confirm" class="remodal-confirm">START DEMO</button>
+    </div>
+
+    <!-- Main menu -->
+    <div class="container footer m-b-30">
+       Customize your own Microsite &copy; 2016
+    </div>
+
+
+</div>
+</body>
+</html>

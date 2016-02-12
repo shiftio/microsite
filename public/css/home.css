@@ -1,0 +1,284 @@
+body, html {
+    background: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    border-bottom: 1px solid #eeeeee;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.flexcontainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+.flex-card-listitem {
+    height: 300px;
+    width: 330px;
+    background-color: #ffffff;
+
+}
+
+.flex-card-listitem .title {
+    color: #292929;
+    font-family: "Circular-Pro-Bold";
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.flex-card-listitem .duration {
+    color: #a0a0a0;
+    font-family: "Circular-Pro-Book";
+    display: block;
+    text-align: center;
+    font-weight: lighter;
+}
+
+.thumbnails {
+    margin: 0 auto;
+    width: 80%;
+}
+
+.thumb-container {
+    width: 330px;
+    height: 185px;
+    display: block;
+    background-color: #ffffff;
+    border: none;
+    margin: 3px;
+    box-shadow: 0px 0px 25px rgba(0,0,0,0.06);
+    overflow: hidden;
+}
+
+.thumb-container img {
+    max-width:100%;
+    max-height:100%;
+}
+
+.menu {
+    border-bottom: 1px solid #eeeeee;
+}
+
+.footer {
+    border-top: 1px solid #eeeeee;
+    padding-top: 10px;
+    font-family: "Circular-Pro-Book";
+    -webkit-font-smoothing: subpixel-antialiased;
+    font-size: 14px;
+    color: #292929;
+    font-weight: lighter;
+    opacity: 0.7;
+}
+
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding-left: 0px;
+    text-transform: uppercase;
+}
+
+li a {
+    display: block;
+    margin-right: 30px;
+    text-decoration: none;
+    font-family: "Circular-Pro-Book";
+    -webkit-font-smoothing: subpixel-antialiased;
+    font-size: 14px;
+    color: #292929;
+    font-weight: lighter;
+    opacity: 0.7;
+    padding-bottom: 5px;
+}
+
+li a.selected {
+    border-bottom: 2px solid rgb(160,160,160);
+    color: rgb(160,160,160);
+    margin-bottom: -1px;
+}
+
+.menu ul li {
+    display: inline-block;
+}
+
+
+.logo {
+    font-family: "Circular-Pro-Bold";
+    font-size: 32px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+.user {
+    font-family: "Circular-Pro-Book";
+    font-size: 18px;
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+.user a {
+    color: #292929;
+    font-weight: lighter;
+    opacity: 0.7;
+    text-decoration: none;
+}
+
+.valign-middle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.m-t-20 {
+    margin-top: 20px;
+}
+
+.m-t-40 {
+    margin-top: 40px;
+}
+
+.m-b-20 {
+    margin-bottom: 20px;
+}
+
+.m-b-30 {
+    margin-bottom: 30px;
+}
+
+.m-b-40 {
+    margin-bottom: 40px;
+}
+
+.helper {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+
+.header{
+    font-family: "Circular-Pro-Bold";
+    font-size: 32px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+.loginform, .uploadpage, .preemptivepage {
+    margin: 0 auto;
+    font-family: "Circular-Pro-Book";
+}
+
+.loginform {
+    width: 100%;
+}
+
+.loginform .field-item, .uploadpage .field-item {
+    margin-bottom: 10px;
+    border-bottom: 2px solid #292929;
+    padding: 3px 0 3px 0;
+
+}
+.loginform .field-item label,.uploadpage .field-item label {
+    color: #292929;
+    width: 74px;
+    font-size: 14px;
+    display: inline-block;
+    text-align: left;
+}
+
+.loginform .field-item input,.uploadpage .field-item input{
+    width: 250px;
+    display: inline-block;
+    text-align: left;
+    margin-left: 0px;
+    border: none;
+    font-size: 16px;
+    outline: none;
+}
+
+.loginform p, .preemptivepage p {
+    opacity: 0.6;
+    font-size: 15px;
+}
+
+#videoplayer {
+    width: 100%;
+    background-color: black;
+    transition: all 0.2s ease-in-out;
+    height: 0;
+    text-align: center;
+}
+
+#videoplayer.active {
+    height: 540px;
+    transform: height
+}
+
+#videostage {
+    width: 100%;
+    background-color: black;
+    transition: all 0.2s ease-in-out;
+    height: 0;
+    text-align: center;
+}
+
+#videostage.active {
+    height: 540px;
+    transform: height
+}
+
+
+.remodal {
+    max-width: 400px !important;
+}
+
+.uploadpage {
+    display: none;
+}
+
+#videostagectrl {
+    color: #292929;
+    opacity: 0;
+    display: block;
+    width:20px;
+    height: 20px;
+    padding: 5px 50px;
+    margin:0 auto;
+    transition: all 1s ease-in-out;
+}
+
+#videostagectrl.active {
+    opacity: 1;
+}
+
+#videostagectrl.active #Chevron_thin_up {
+    fill: rgb(160,160,160);
+}
+
+
+.vertical-align {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#videoplayer {
+    position: relative;
+    z-index: 1;
+}
+
+.jwplayer {
+    margin: 0 auto!important;
+    background-color: black!important;
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MediaSilo Microsite</title>
+
+    <!-- Custom styles -->
+    <link href="css/home.css" rel="stylesheet">
+    <link href="fonts/fonts.css" rel="stylesheet">
+    <link href="css/remodal.css" rel="stylesheet">
+    <link href="css/remodal-default-theme.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/remodal.min.js"></script>
+
+
+</head>
+
+<body>
+
+<div class="remodal-bg">
+
+    <div class="loginform" data-remodal-id="modal">
+        <div class="header">Login</div>
+        <p class="m-b-30">We're glad to have you. Please fill out the information above to log in.</p>
+        <form id="loginform" class="m-b-30" method="post" action="/login">
+            <div class="field-item">
+                <label>Username:</label>
+                <input type="text" name="username" id="username" placeholder="">
+            </div>
+            <div class="field-item">
+                <label>Password:</label>
+                <input type="password" name="password" id="password" placeholder="">
+            </div>
+        </form>
+
+        <br>
+        <button data-remodal-action="confirm" class="remodal-confirm">LOGIN</button>
+    </div>
+
+</div>
+
+<script type="text/javascript">
+    // Define and open the modal window
+    var options = {
+        closeOnOutsideClick: false,
+        closeOnEscape: false
+    };
+
+    var inst = $('[data-remodal-id=modal]').remodal(options);
+    inst.open();
+
+    $(document).ready(function() {
+        $(document).on('confirmation', '.remodal', function() {
+           $("#loginform").submit();
+        });
+    });
+
+</script>
+</body>
+</html>
