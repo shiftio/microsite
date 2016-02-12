@@ -1,13 +1,15 @@
 # Microsite Template
-This project uses the MediaSilo API and creates a basic screener application. Users are presented with a list of projects and assets that can be viewed in the browser. This project is intended as a starting-off point for a developer who wishes to build any variety of application using MediaSilo as the media management platform. 
+This project uses the MediaSilo API and creates a basic screener application. Users are presented with a list of projects and assets that can be viewed in the browser. This project is intended as a starting-off point for a developer who wishes to build any variety of applications using MediaSilo as the media management platform. 
 
-For more information on the api, please see https://docs.mediasilo.com. 
+For more information on the api, please see our official [API Documentation](https://docs.mediasilo.com). 
 
 
 ### Getting Started
 
 1. Install Composer
+```
 curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
+```
 
 2. Change the default account name
 3. Customize the css or pages
