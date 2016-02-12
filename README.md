@@ -4,7 +4,7 @@ This project uses the MediaSilo API and creates a basic screener application. Us
 For more information on the api, please see https://docs.mediasilo.com. 
 
 
-# Getting Started
+### Getting Started
 
 1. Install Composer
 curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
@@ -13,9 +13,9 @@ curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin
 3. Customize the css or pages
 
 
-# About the SLIM Framework
-This project uses the lightweight SLIM framework (www.slimframework.com) for basic routing in PHP. 
+### About the SLIM Framework
+This project uses the lightweight [Slim Framework](www.slimframework.com) for basic routing in PHP. You can use your mini-framework of choice; we like Slim because of its simplicity.
 
-# Twig for Templating
-There are only two pages in the templates directoru: home.html and login.html. This project makes use of the TWIG templating language which makes it easy to use data in a template without the need to write PHP code.
+### Twig for Templating
+This project also uses [Twig](http://twig.sensiolabs.org/) as a lightweight templating language. There are only two pages in the templates directory: home.html and login.html. 
 
