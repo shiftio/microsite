@@ -16,8 +16,7 @@ return [
 
         // MediaSilo Settings
         'ms_settings' => [
-            'hostname' => 'microsite',
-            'apiurl'  => 'https://api.mediasilo.com/v3/'
+            'hostname' => 'microsite'
         ],
 
         // View settings
