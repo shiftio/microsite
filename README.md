@@ -3,6 +3,13 @@ This project uses the MediaSilo API and creates a basic screener application. Us
 
 For more information on the api, please see our official [API Documentation](https://docs.mediasilo.com). 
 
+To see a demo of this project, go to:
+[http://silo-microsite.herokuapp.com](silo-microsite.herokuapp.com)
+
+Username: viewer
+Password: MicroSite1
+
+
 ### Clone this project
 ```
 git clone https://github.com/mediasilo/microsite.git
