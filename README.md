@@ -3,6 +3,11 @@ This project uses the MediaSilo API and creates a basic screener application. Us
 
 For more information on the api, please see our official [API Documentation](https://docs.mediasilo.com). 
 
+### Clone this project
+```
+git clone https://github.com/mediasilo/microsite.git
+```
+
 After you have downloaded this project, follow the instructions below:
 
 ### 1. Install Composer
