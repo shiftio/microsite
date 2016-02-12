@@ -12,7 +12,8 @@ curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin
 ```
 
 2. Change the default account name
-Inside of 
+Open settings.php inside the /src directory. Update the 'hostname' variable with your account/host name. All logins will automatically go against your own MediaSilo account.
+
 ```
 // MediaSilo Settings
   'ms_settings' => [
@@ -21,7 +22,7 @@ Inside of
   ]
 ```
 3. Customize the css or pages
-
+Since this is a standalone app using the API, the sky is the limit. Create your own templates with all the goodness that is CSS and JavaScript.
 
 ### About the SLIM Framework
 This project uses the lightweight [Slim Framework](www.slimframework.com) for basic routing in PHP. You can use your mini-framework of choice; we like Slim because of its simplicity.
