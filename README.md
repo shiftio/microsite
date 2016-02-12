@@ -12,6 +12,14 @@ curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin
 ```
 
 2. Change the default account name
+Inside of 
+```
+// MediaSilo Settings
+  'ms_settings' => [
+      'hostname' => 'microsite',
+      'apiurl'  => 'https://api.mediasilo.com/v3/'
+  ]
+```
 3. Customize the css or pages
 
 
