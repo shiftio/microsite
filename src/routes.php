@@ -48,7 +48,6 @@ $app->post('/login', function ($request, $response, $args) {
     } else {
         if(isset($session->id)){
             setcookie('SESSIONKEY', $session->id, time()+8640000, '/');
-            setcookie('HOSTNAME', $hostname, time()+8640000, '/');
             return $response->withStatus(303)->withHeader('Location', '/');
         } else {
             return $this->view->render($response, "login.html", []);
@@ -62,7 +61,6 @@ $app->post('/login', function ($request, $response, $args) {
 
 $app->get('/logout', function ($request, $response, $args) {
     setcookie('SESSIONKEY', "", time() - 3600, '/');
-    setcookie('HOSTNAME', "", time() - 3600, '/');
     return $this->view->render($response, 'login.html', []);
 });
 
