@@ -31,8 +31,7 @@ Open settings.php inside the /src directory. Update the 'hostname' variable with
 ```
 // MediaSilo Settings
   'ms_settings' => [
-      'hostname' => 'microsite',
-      'apiurl'  => 'https://api.mediasilo.com/v3/'
+      'hostname' => 'microsite'
   ]
 ```
 ### 3. Customize the css or pages
@@ -44,3 +43,6 @@ This project uses the lightweight [Slim Framework](www.slimframework.com) for ba
 ### Twig for Templating
 This project also uses [Twig](http://twig.sensiolabs.org/) as a lightweight templating language. There are only two pages in the templates directory: home.html and login.html. 
 
+
+# Run it on Heroku
+A great way to run your microsite is to use Heroku. This project already includes the required Procfile and apache_app.conf files. Check [here](https://devcenter.heroku.com/articles/getting-started-with-php#introduction) for instructions on how to get your project deployed on Heroku in just a few steps.
