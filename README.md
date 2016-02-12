@@ -10,10 +10,8 @@ For more information on the api, please see our official [API Documentation](htt
 ```
 curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 ```
-
 2. Change the default account name
 Open settings.php inside the /src directory. Update the 'hostname' variable with your account/host name. All logins will automatically go against your own MediaSilo account.
-
 ```
 // MediaSilo Settings
   'ms_settings' => [
