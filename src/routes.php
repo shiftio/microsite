@@ -6,7 +6,7 @@
 
 // Check if the the hostname and sessionkey cookies are set and the user is logged in
 function isLoggedIn() {
-    if(isset($_COOKIE['HOSTNAME']) && isset($_COOKIE['SESSIONKEY'])){
+    if(isset($_COOKIE['SESSIONKEY'])){
         return true;
     }
     return false;
